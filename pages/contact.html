@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blondie's - News</title>
+    <!-- Link para el uso de iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/Blondie_sLogo.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Smooch+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Menu de navegación -->
+        <nav class="nav">
+            <ul>
+                <div class="itemNav">
+                    <li class="item" id="item1"><a href="../index.html">Home</a></li>
+                    <li class="item" id="item2"><a href="../pages/aboutUs.html">About Us</a></li>
+                    <li class="item" id="item3"><a href="../pages/chocolates.html">Chocolates</a></li>
+                </div>
+
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="../assets/logo3.png" alt="logo">
+                </div>
+
+                <div class="itemNav">
+                    <li class="item" id="item4"><a href="../pages/whereWeAre.html">Where we are</a></li>
+                    <li class="item" id="item5"><a href="../pages/contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- END HEADER --> 
+
+    <main>
+        <!-- Slogan -->
+        <h1 class="slogan">"Los mejores chocolates caseros"</h1>
+        <h2>Para contactarnos:</h2>
+        <div class="datosBox">
+            <form action="/ruta-destino" method="get" enctype="">
+                <fieldset>
+                    <div class="datos">
+                        <input type="text" name="userName" id="nombre" placeholder="Nombre">
+                        <input type="number" name="age" placeholder="Ingresa tu edad">
+                    </div>
+                    <div class="datos">
+                        <input type="tel" name="phone" placeholder="Teléfono" required>
+                        <input type="email" name="email" placeholder="Ingresa tu email" required>
+                        <select name="zona">
+                            <option value="" hidden selected>Elije una zona</option>
+                            <option value="zn">Zona Norte</option>
+                            <option value="zs">Zona Sur</option>
+                        </select>
+                    </div>
+                    <div class="datos">
+                        <textarea name="message" placeholder="Deja tu mensaje" cols="30" rows="10"></textarea>
+                    </div>  
+                    <div class="datos">
+                        <button type="reset">Limpiar campos</button>
+                        <button type="submit">Enviar</button>
+                    </div>
+                    
+    
+                </fieldset>
+            </form>
+        </div>
+        
+        <h2>Tambien podes contactarnos por</h2>
+        <div class="pieContactMain">
+            <div>
+                <span>Teléfono: <a href="tel:35535535"  target="_blank">35535535</a></span>
+                <span>Email: <a href="franoberti45@gmail.com" target="_blank">franoberti45@gmail.com</a></span>
+            </div>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=+5493515931774" target="_blank">Envíanos un mensaje de WhatsApp</a>
+            </div>
+        </div>
+        
+    </main>
+            <!-- FOOTER -->
+    <footer>
+
+        <!-- Logos Redes -->
+        <div class="preFooter">
+
+                <!-- Contactos -->
+                <div class="contactBox">
+                    <img src="../assets/Blondie_s.png" alt="BlondiesLetras" id="logoFooter">
+                    <div class="redes">
+                        <a href="https://www.instagram.com/blondie.s.cba/" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="mailto:franoberti45@gmail.com?Subject=Correo%20de%20mi%20página%20web" class="gmail" target="_blank"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="./pages/whereWeAre.html" class="linkDondeEstamos">¿Dónde Estamos?</a>
+                </div>
+
+                <!-- Suscripcion a newsletter -->
+                <div class="newsletterBox">
+                    <h4>Suscribite al newsletter</h4>
+                    <div class="formNews">
+                        <form action="/ruta-destino" method="get" enctype="">
+                            <fieldset>
+                                <div class="inputBox">
+                                    <input type="text" name="userName" placeholder="Nombre" class="input">
+                                    <input type="text" name="userLastName" placeholder="Apellido" class="input">
+                                </div>
+                                <div class="inputBox">
+                                    <input type="email" name="email" placeholder="Ingresa tu email" required class="input">
+                                    <label for="zona1">¿Dónde estás?</label>
+                                    <select name="zona" class="input">
+                                        <option value="zn">Zona Norte</option>
+                                        <option value="zs">Zona Sur</option>
+                                    </select>
+                                </div>
+                                <div class="inputBox">
+                                    <button type="reset" class="btn">Limpiar campos</button>
+                                    <button type="submit" class="btn">Enviar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+        </div>
+
+        <!-- WhatsApp Flotante -->
+        <div class="wppFijo">
+            <a href="https://api.whatsapp.com/send?phone=+5493515931774" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <span>Copyright © 2022 Blondie's - Todos los derechos reservados</span>
+        </div>
+        <div class="autor">
+            <span>Diseño y desarrollo por <a href="https://www.linkedin.com/in/francisco-oberti/" target="_blank">Francisco Oberti</a></span>
+        </div>
+
+
+    </footer>
+    <!-- END FOOTER -->
+</body>
+</html>

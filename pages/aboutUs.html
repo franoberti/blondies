@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blondie's - About us</title>
+    <!-- Link para el uso de iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/Blondie_sLogo.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Smooch+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Menu de navegación -->
+        <nav class="nav">
+            <ul>
+                <div class="itemNav">
+                    <li class="item" id="item1"><a href="../index.html">Home</a></li>
+                    <li class="item" id="item2"><a href="../pages/aboutUs.html">About Us</a></li>
+                    <li class="item" id="item3"><a href="../pages/chocolates.html">Chocolates</a></li>
+                </div>
+
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="../assets/logo3.png" alt="logo">
+                </div>
+
+                <div class="itemNav">
+                    <li class="item" id="item4"><a href="../pages/whereWeAre.html">Where we are</a></li>
+                    <li class="item" id="item5"><a href="../pages/contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- END HEADER --> 
+
+    <main>
+        <!-- Slogan -->
+        <h1 class="slogan">"Los mejores chocolates caseros"</h1>
+        
+        <h2>¿Quienes somos?</h2>
+
+        <div class="parrafo">
+            <p>Blondie's comenzó en el 2020 en tiempos de la pandemia, surgió por nuestro amor al chocolate y por querer
+            compartirlo con todo el mundo. Somos un microemprendimiento que hace chocolates caseros y los repartimos a
+            domicilio.</p>
+            <p>Tenemos todo tipo de variedades y combinacion de savores, si querés contactarte con nosotros dirigite a la
+            pagina de <a href="contact.html">contacto</a></p>
+        </div>
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <!-- Logos Redes -->
+        <div class="preFooter">
+
+                <!-- Contactos -->
+                <div class="contactBox">
+                    <img src="../assets/Blondie_s.png" alt="BlondiesLetras" id="logoFooter">
+                    <div class="redes">
+                        <a href="https://www.instagram.com/blondie.s.cba/" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="mailto:franoberti45@gmail.com?Subject=Correo%20de%20mi%20página%20web" class="gmail" target="_blank"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="./pages/whereWeAre.html" class="linkDondeEstamos">¿Dónde Estamos?</a>
+                </div>
+
+                <!-- Suscripcion a newsletter -->
+                <div class="newsletterBox">
+                    <h4>Suscribite al newsletter</h4>
+                    <div class="formNews">
+                        <form action="/ruta-destino" method="get" enctype="">
+                            <fieldset>
+                                <div class="inputBox">
+                                    <input type="text" name="userName" placeholder="Nombre" class="input">
+                                    <input type="text" name="userLastName" placeholder="Apellido" class="input">
+                                </div>
+                                <div class="inputBox">
+                                    <input type="email" name="email" placeholder="Ingresa tu email" required class="input">
+                                    <label for="zona1">¿Dónde estás?</label>
+                                    <select name="zona" class="input">
+                                        <option value="zn">Zona Norte</option>
+                                        <option value="zs">Zona Sur</option>
+                                    </select>
+                                </div>
+                                <div class="inputBox">
+                                    <button type="reset" class="btn">Limpiar campos</button>
+                                    <button type="submit" class="btn">Enviar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+        </div>
+
+        <!-- WhatsApp Flotante -->
+        <div class="wppFijo">
+            <a href="https://api.whatsapp.com/send?phone=+5493515931774" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <span>Copyright © 2022 Blondie's - Todos los derechos reservados</span>
+        </div>
+        <div class="autor">
+            <span>Diseño y desarrollo por <a href="https://www.linkedin.com/in/francisco-oberti/" target="_blank">Francisco Oberti</a></span>
+        </div>
+
+
+    </footer>
+    <!-- END FOOTER -->
+</body>
+
+</html>

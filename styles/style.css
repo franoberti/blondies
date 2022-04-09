@@ -1,0 +1,821 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #DAB88B;
+    box-shadow: 0 0 15px #000000;
+    height: 100px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+header .burguerMenu {
+    display: none;
+}
+
+header .header__menu .closeMenu {
+    display: none;
+}
+
+header .nav {
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    display: initial;
+    position: inherit;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    flex-grow: 1;
+}
+
+header nav ul div.itemNav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    height: 100px;
+    padding: 0px;
+}
+
+header a {
+    font-size: 30px;
+    background-color: #DAB88B;
+    border-radius: 5px;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+header li {
+    display: flex;
+    flex-grow: 1;
+}
+
+header a:hover {
+    color: #fefefe;
+}
+
+header div img {
+    background-color: #DAB88B;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+header .logo {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding-top: 100px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 768px){
+    header nav ul div.itemNav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100%;
+        background-color: white;
+    }
+
+    header .logo {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        padding-top: 60px;
+    }
+
+    header .burguerMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 2rem;
+        background-color: white;
+        border: none;
+        color: grey;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: box-shadow 0.5s ease-in;
+    }
+
+    header button.burguerMenu:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* input#menu {
+        display: none;
+    } */
+
+    input#menu:checked ~ .itemNav {
+        display: block;
+    }
+
+    header .nav .closeMenu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+/* END HEADER */
+
+/* MAIN */
+
+main {
+    background-color: #F3E9DD;
+}
+
+main h1 {
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 30px;
+    font-size: 50px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #d3ab78;
+    grid-area: titulo;
+}
+
+.zonaDelBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4%;
+    margin-top: 4%;
+}
+
+#zonaNorte {
+    grid-area: zonaNorte;
+    align-self: center;
+}
+
+#zonaSur {
+    grid-area: zonaSur;
+    align-self: center;
+}
+
+div.delivery {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas: 
+        "titulo titulo"
+        "zonaNorte zonaSur"
+    ;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+main article.ZonaDelivery {
+    background-color: #f3dabb;
+    display: inline-block;
+    height: 250px;
+    width: 260px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
+    top: 70px;
+    border-radius: 10px;
+}
+
+div.circuloZona {
+    color: #fefefe;
+    width: 68px;
+    text-transform: uppercase;
+    font-size: 22px;
+    height: 68px;
+    line-height: 68px;
+    background-color: #B7CADB;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+}
+
+h3.nomZona {
+    padding: 10px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+h6.horario {
+    padding: 5px;
+    font-size: 18px;
+}
+
+h4.costo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div.galery {
+    background-color: #FDF6EC;
+    margin: 10% 3% 0px 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 40px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.galeryFoto{
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    border-radius: 30px;
+}
+
+.imageGalery {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+div.parrafo {
+    text-align: center;
+    max-width: 600px;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 490px;
+}
+
+div.parrafo p {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 17px;
+}
+
+div.parrafo p a {
+    font-family: 'Hind Madurai', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+
+div.mapa {
+    position: relative;
+    padding: 30px;
+    max-width: 660px;
+    left: 400px;
+    background-color: #f3dabb;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
+}
+
+div.mapa iframe {
+    position: relative;
+    left: 30px;
+}
+
+table {
+    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+    table-layout: fixed;
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: 380px;
+    margin-top: 30px;
+    border: 3px solid #DAB88B;
+}
+
+thead th:nth-child(1) {
+    width: 5%;
+}
+  
+thead th:nth-child(2) {
+    width: 10%;
+}
+  
+thead th:nth-child(3) {
+    width: 30%;
+}
+  
+thead th:nth-child(4) {
+    width: 10%;
+}
+
+thead th:nth-child(5) {
+    width: 10%;
+}
+
+thead th {
+    font-size: 25px;
+    border: 3px solid #DAB88B;
+}
+
+th {
+    padding: 20px;
+    letter-spacing: 2px;
+}
+  
+td {
+    padding: 5px;
+    letter-spacing: 1px;
+}
+  
+tbody td {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+thead {
+    background: #DAB88B;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FDF6EC;
+}
+  
+  tbody tr:nth-child(even) {
+    background-color: #fce1ba;
+}
+
+caption {
+    padding: 20px;
+    color: #fefefe;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #DAB88B;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    font-size: 30px;
+}
+
+div.pieContactMain div {
+    text-align: center;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+div.pieContactMain div span {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+div.pieContactMain div a {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+div.datos {
+    text-align: center;
+    padding-top: 20px;
+}
+
+div.datosBox {
+    padding-top: 55px;
+    padding-left: 520px;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    border: none;
+}
+
+div.datosBox form {
+    background-color: #f3dabb;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
+}
+
+div.datosBox form fieldset {
+    border: none;
+}
+
+div.datosBox form fieldset input {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+div.datosBox form fieldset select, div.datosBox form fieldset select option {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+div.datosBox form fieldset textarea, div.datosBox form fieldset button {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+div.datosBox form fieldset textarea {
+    padding: 1rem;
+    resize: none;
+    margin-bottom: 1rem;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    background-color: #fefefe8f;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 5px;
+    outline: none;
+    height: 150px;
+    width: 300px;
+}
+
+div.datosBox form fieldset input {
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    background-color: #fefefe8f;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 5px;
+    outline: none;
+}
+
+div.datosBox form fieldset select, div.datosBox form fieldset select option {
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    background-color: #fefefe8f;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 5px;
+    outline: none;
+}
+
+div.datosBox form fieldset button {
+    color: #000;
+    border-radius: 5px;
+    border: 0;
+    background-color: #DAB88B;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin: 5px;
+    position: relative;
+    bottom: 20px;
+}
+
+div.datosBox form fieldset button:hover {
+    color: #fefefe;
+}
+
+
+@media screen and (max-width: 1189px){
+
+    div.galeryFoto{
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1020px){
+
+    div.galeryFoto{
+        display: inline-block;
+        height: 280px;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 955px){
+    div.galeryFoto{
+        display: inline-block;
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 850px){
+
+    div.galeryFoto{
+        display: inline-block;
+        height: 230px;
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 788px){
+
+    div.galeryFoto{
+        display: inline-block;
+        height: 210px;
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 678px){
+    div.delivery {
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 42.5% 42.5%;
+        grid-template-areas: 
+            "titulo"
+            "zonaNorte"
+            "zonaSur"
+        ;
+    }
+
+    main h1 {
+        text-align: center;
+        padding-top: 100px;
+        padding-left: 30px;
+        font-size: 35px;
+    }
+
+    .zonaDelBox {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #zonaPad {
+        padding-top: 6%;
+        margin-top: 6%;
+    }
+
+    div.galery {
+        margin: 10% 15% 0px 15%;
+        flex-direction: column;
+    }
+
+    div.galeryFoto{
+        display: inline-block;
+        padding-top: 4%;
+        height: 250px;
+        width: 250px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    div.galery {
+        margin: 10% 8% 0px 8%;
+        flex-direction: column;
+    }
+
+}
+
+/* END MAIN */
+
+/* FOOTER */
+
+footer {
+    background-color: #B7CADB;
+    display: grid;
+    grid-template-rows: 95% 5%;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+        "prefooter prefooter"
+        "copyright autor"
+    ;
+    height: auto;
+}
+
+div.contactBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+div.redes {
+    padding: 0;
+}
+
+footer #logoFooter {
+    height: 150px;
+    width: 150px;
+}
+
+.preFooter {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+        "redes newsletter"
+    ;
+    grid-area: prefooter;
+}
+
+footer div.copyright {
+    grid-area: copyright;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 5px;
+}
+
+footer div.autor {
+    grid-area: autor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 5px;
+}
+
+footer div.autor a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.preFooter div.newsletterBox {
+    grid-area: newsletter;
+    padding-top: 30px;
+}
+
+.preFooter div.contactBox {
+    grid-area: redes;
+}
+
+.preFooter .redes a {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    color: #fefefe;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.preFooter .redes a.facebook {
+    background-color: #3b5998;
+}
+
+.preFooter .redes a.gmail {
+    background-color: #d93025;
+}
+
+.preFooter .redes a.instagram {
+    background-color: #ed4956;
+}
+
+.preFooter a.linkDondeEstamos {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+div.newsletterBox {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+footer h4 {
+    font-size: 25px;
+    text-align: center;
+}
+
+div.formNews fieldset {
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .inputBox {
+    padding-left: 35%;
+} */
+
+.input {
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    background-color: #fefefe8f;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin: 5px;
+    outline: none;
+}
+
+.btn {
+    color: #fefefe;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1572A1;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #1572a1bb;
+}
+
+div.wppFijo {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    color: #fefefe;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: #4FCE5D;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+.footFooter {
+    position: relative;
+    bottom: 0px;
+}
+
+.footFooter span {
+    padding-left: 200px;
+    color: #fefefe;
+}
+
+.footFooter a {
+    text-decoration: none;
+    color: #fefefe;
+    font-weight: bold;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 768px){
+    footer {
+        grid-template-rows: 90% 5% 5%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "prefooter"
+            "copyright"
+            "autor"
+        ;
+    }
+
+    .preFooter {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+            "redes"
+            "newsletter"
+        ;
+        grid-area: prefooter;
+    }
+
+    div.contactBox {
+        padding-left: 0;
+    }
+
+}
+
+
+/* END FOOTER */    
