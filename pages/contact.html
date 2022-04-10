@@ -9,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/Blondie_sLogo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo3.png">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../styles/style.css">
@@ -54,28 +54,18 @@
         <div class="datosBox">
             <form action="/ruta-destino" method="get" enctype="">
                 <fieldset>
-                    <div class="datos">
-                        <input type="text" name="userName" id="nombre" placeholder="Nombre">
-                        <input type="number" name="age" placeholder="Ingresa tu edad">
-                    </div>
-                    <div class="datos">
-                        <input type="tel" name="phone" placeholder="Teléfono" required>
-                        <input type="email" name="email" placeholder="Ingresa tu email" required>
-                        <select name="zona">
-                            <option value="" hidden selected>Elije una zona</option>
-                            <option value="zn">Zona Norte</option>
-                            <option value="zs">Zona Sur</option>
-                        </select>
-                    </div>
-                    <div class="datos">
-                        <textarea name="message" placeholder="Deja tu mensaje" cols="30" rows="10"></textarea>
-                    </div>  
-                    <div class="datos">
-                        <button type="reset">Limpiar campos</button>
-                        <button type="submit">Enviar</button>
-                    </div>
-                    
-    
+                    <input type="text" name="userName" placeholder="Nombre" id="inputNombre">
+                    <input type="number" name="age" placeholder="Ingresa tu edad" id="inputEdad">
+                    <input type="tel" name="phone" placeholder="Teléfono" required id="inputTel">
+                    <input type="email" name="email" placeholder="Ingresa tu email" required id="inputEmail">
+                    <select name="zona" id="inputZona">
+                        <option value="" hidden selected>Elije una zona</option>
+                        <option value="zn">Zona Norte</option>
+                        <option value="zs">Zona Sur</option>
+                    </select>
+                    <textarea name="message" placeholder="Deja tu mensaje" cols="30" rows="10" id="inputMess"></textarea>
+                    <button type="reset" id="inputReset">Limpiar campos</button>
+                    <button type="submit" id="inputEnviar">Enviar</button>
                 </fieldset>
             </form>
         </div>
