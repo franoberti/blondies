@@ -59,6 +59,9 @@ header li {
 
 header a:hover {
     color: #fefefe;
+    transform: scale(1.2);
+    background-color: #ffffff00;
+    transition: transform, color, 0.25s ease-in-out;
 }
 
 header div img {
@@ -114,13 +117,29 @@ header .logo {
 /* MAIN */
 
 main {
-    background-color: #F3E9DD;
+    /* background-color: #F3E9DD; */
+    background: radial-gradient(#eedbc5, #FDF6EC);
+}
+
+@keyframes left-in {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
 }
 
 main h1 {
     text-align: center;
     padding-top: 100px;
     font-size: 50px;
+    position: relative;
+    animation-name: left-in;
+    animation-duration: 1s;
 }
 
 main h2 {
@@ -784,6 +803,11 @@ footer div.autor a {
 
 .preFooter .redes a.instagram {
     background-color: #ed4956;
+}
+
+.fa-whatsapp:before {
+    content: "\f232";
+    color: white;
 }
 
 .preFooter a.linkDondeEstamos {
