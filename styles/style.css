@@ -120,7 +120,6 @@ main {
 main h1 {
     text-align: center;
     padding-top: 100px;
-    padding-left: 30px;
     font-size: 50px;
 }
 
@@ -280,6 +279,14 @@ div.galeryFoto{
     }
 }
 
+@media screen and (max-width: 768px){
+    main h1 {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 35px;
+    }
+}
+
 @media screen and (max-width: 678px){
     div.delivery {
         grid-template-columns: 100%;
@@ -289,13 +296,6 @@ div.galeryFoto{
             "zonaNorte"
             "zonaSur"
         ;
-    }
-
-    main h1 {
-        text-align: center;
-        padding-top: 100px;
-        padding-left: 30px;
-        font-size: 35px;
     }
 
     .zonaDelBox {
@@ -316,6 +316,7 @@ div.galeryFoto{
     div.galeryFoto{
         display: inline-block;
         padding-top: 4%;
+        padding-bottom: 4%;
         height: 250px;
         width: 250px;
         border-radius: 30px;
@@ -338,16 +339,18 @@ div.galeryFoto{
 
 div.parrafo {
     text-align: center;
-    max-width: 600px;
     position: relative;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    left: 490px;
+    padding: 20px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
 }
 
 div.parrafo p {
     font-family: 'Hind Madurai', sans-serif;
     font-size: 17px;
+    max-width: 590px;
 }
 
 div.parrafo p a {
@@ -361,33 +364,57 @@ div.parrafo p a {
 
 /* WHERE WE ARE */
 
+div.mapaBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 div.mapa {
-    position: relative;
     padding: 30px;
-    max-width: 660px;
-    left: 400px;
     background-color: #f3dabb;
     margin-top: 30px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-div.mapa iframe {
-    position: relative;
-    left: 30px;
+.margin {
+    height: 30px;
+}
+
+@media screen and (max-width: 678px){
+    
+    div.mapa {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    div.mapa iframe {
+        max-width: 100%;
+        height: 300px;
+    }
 }
 
 /* END WHERE WE ARE */
 
 /* CHOCOLATES */
 
+div.tabla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 table {
     font-family: 'Hind Madurai', sans-serif;
     font-family: 'Smooch Sans', sans-serif;
     table-layout: fixed;
-    width: 50%;
+    width: 65%;
     border-collapse: collapse;
-    margin-left: 380px;
     margin-top: 30px;
     border: 3px solid #DAB88B;
 }
@@ -418,7 +445,6 @@ thead th {
 }
 
 th {
-    padding: 20px;
     letter-spacing: 2px;
 }
   
@@ -456,6 +482,78 @@ caption {
     background-color: #DAB88B;
     background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
     font-size: 30px;
+}
+
+.detalle{
+    display: none;
+}
+
+
+/* Media Query Chocolates */
+
+@media screen and (max-width: 768px){
+    table {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    thead th:nth-child(3) {
+        width: 30%;
+        display: none;
+    }
+
+    tbody td:nth-child(3) {
+        display: none;
+    }
+    
+    .detalle {
+        width: 80%;
+        display: flex;
+    }
+
+    .detalleBox{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fce1ba;
+        padding-bottom: 10px;
+        border: 3px solid #DAB88B;
+        border-top: 0px;
+    }
+    
+    .detTitulo {
+        padding-top: 5px;
+        color: black;
+    }
+
+    .detSubtitulo {
+        padding-left: 20px;
+    }
+
+    .detalleBox p {
+        padding-left: 40px;
+        padding-right: 10px;
+        font-weight: bold;
+        color: #434343;
+        
+    }
+}
+
+@media screen and (max-width: 400px){
+    thead th {
+        font-size: 18px;
+    }
+
+    tbody td {
+        font-size: 15px;
+    }
+
+    caption {
+        font-size: 25px;
+    }
 }
 
 /* END CHOCOLATES */
