@@ -121,6 +121,7 @@ main {
     background: radial-gradient(#eedbc5, #FDF6EC);
 }
 
+/* Animacion */
 @keyframes left-in {
     0% {
         left: -100%;
@@ -192,6 +193,46 @@ main article.ZonaDelivery {
     box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
     top: 70px;
     border-radius: 10px;
+}
+
+main article.ZonaDelivery:hover {
+    transform: scale(1.1);
+    transition: transform, color, 0.2s ease-in-out;
+}
+
+@keyframes giro {
+    0%{
+        transform: rotate(0deg);
+    }
+    12.5%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    37.5%{
+        transform: rotate(135deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    62.5%{
+        transform: rotate(225deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    87.5%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+main article.ZonaDelivery:hover > div.circuloZona {
+    animation-name: giro;
+    animation-duration: 0.5s;
 }
 
 div.circuloZona {
