@@ -17,8 +17,8 @@ header {
     position: sticky;
 }
 
-header .nav {
-    font-weight: bold;
+header #nav {
+    font-weight: 500;
     text-decoration: none;
     width: 100%;
     display: initial;
@@ -66,8 +66,7 @@ header a:hover {
 
 header div img {
     background-color: #DAB88B;
-    max-width: 100%;
-    max-height: 100%;
+    width: 200px !important;
     border-radius: 50%;
 }
 
@@ -102,11 +101,28 @@ header .logo {
         padding-top: 17px;
     }
 
+    header div img {
+        width: 150px !important;
+    }
+
     header .logo {
         height: 150px;
         width: 150px;
         border-radius: 50%;
         padding-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    header div img {
+        width: 120px !important;
+    }
+
+    header .logo {
+        height: 120px;
+        width: 120px;
     }
 
 }
@@ -758,7 +774,7 @@ footer {
     grid-template-columns: 30% 70%;
     grid-template-areas:
         "prefooter prefooter"
-        "copyright autor"
+        "copyright copyright"
     ;
     height: auto;
 }
@@ -795,22 +811,22 @@ footer div.copyright {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #000000;
     padding-bottom: 5px;
 }
 
-footer div.autor {
+/* footer div.autor {
     grid-area: autor;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     padding-bottom: 5px;
-}
+} */
 
-footer div.autor a {
-    color: white;
-    font-weight: bold;
+footer div.copyright a {
+    color: #000000;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -852,10 +868,10 @@ footer div.autor a {
 }
 
 .preFooter a.linkDondeEstamos {
-    color: #fefefe;
+    color: #000000;
     text-decoration: none;
     font-size: large;
-    font-weight: bolder;
+    font-weight: 600;
     padding-top: 20px;
 }
 
