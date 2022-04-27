@@ -563,7 +563,7 @@ footer {
         font-weight: 600;
         padding-top: 20px; }
       @media screen and (max-width: 768px) {
-        footer .preFooter div.contactBox div.contactBox {
+        footer .preFooter div.contactBox {
           padding-left: 0; } }
     footer .preFooter div.newsletterBox {
       grid-area: newsletter;
@@ -603,7 +603,7 @@ footer {
           footer .preFooter div.newsletterBox div.formNews fieldset .btn:hover {
             background-color: #1572a1bb; }
     @media screen and (max-width: 768px) {
-      footer .preFooter .preFooter {
+      footer .preFooter {
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
         grid-template-areas: "redes" "newsletter";

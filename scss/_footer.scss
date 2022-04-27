@@ -73,9 +73,7 @@ footer {
             }
 
             @media screen and (max-width: 768px){
-                div.contactBox {
-                    padding-left: 0;
-                }
+                padding-left: 0;
             }
         }
 
@@ -127,15 +125,13 @@ footer {
         }
 
         @media screen and (max-width: 768px){
-            .preFooter {
-                grid-template-columns: 100%;
-                grid-template-rows: 50% 50%;
-                grid-template-areas: 
-                    "redes"
-                    "newsletter"
-                ;
-                grid-area: prefooter;
-            }
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: 
+                "redes"
+                "newsletter"
+            ;
+            grid-area: prefooter;
         }
     }
 
