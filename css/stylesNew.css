@@ -280,6 +280,225 @@ main div.galery {
       flex-direction: column; } }
 
 /* ------------------------------------------- END MAIN INDEX ----------------------------------- */
+/* --------------------------------------------- CONTACT ---------------------------------------- */
+div.datosBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%; }
+  div.datosBox form {
+    background-color: #f3dabb;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    height: auto;
+    width: 60%; }
+    div.datosBox form fieldset {
+      border: none;
+      display: grid;
+      grid-template-columns: 33% 33% 34%;
+      grid-template-rows: 20% 20% 40% 20%;
+      grid-template-areas: "nombre nombre edad" "tel email zona" "mess mess mess" "reset enviar enviar"; }
+      div.datosBox form fieldset #inputNombre {
+        grid-area: nombre; }
+      div.datosBox form fieldset #inputEdad {
+        grid-area: edad; }
+      div.datosBox form fieldset #inputTel {
+        grid-area: tel; }
+      div.datosBox form fieldset #inputEmail {
+        grid-area: email; }
+      div.datosBox form fieldset #inputZona {
+        grid-area: zona; }
+      div.datosBox form fieldset #inputMess {
+        grid-area: mess; }
+      div.datosBox form fieldset #inputReset {
+        grid-area: reset; }
+      div.datosBox form fieldset #inputEnviar {
+        grid-area: enviar; }
+      div.datosBox form fieldset select, div.datosBox form fieldset select option, div.datosBox form fieldset input, div.datosBox form fieldset textarea {
+        font-family: 'Hind Madurai', sans-serif;
+        background-color: #fefefe8f;
+        margin: 5px;
+        padding: 5px;
+        color: #000000;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 90%;
+        resize: none;
+        outline: none;
+        border: 0; }
+      div.datosBox form fieldset button {
+        background-color: #DAB88B;
+        margin: 5px;
+        color: #000000;
+        border-radius: 5px;
+        border: 0; }
+        div.datosBox form fieldset button:hover {
+          color: #fefefe; }
+      @media screen and (max-width: 678px) {
+        div.datosBox form fieldset {
+          border: none;
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: repeat(5, 10%) 20% repeat(2, 10%);
+          grid-template-areas: "nombre" "edad" "tel" "email" "zona" "mess" "reset" "enviar"; } }
+
+div.pieContactMain div {
+  text-align: center;
+  padding: 5px;
+  padding-top: 20px; }
+  div.pieContactMain div span {
+    font-family: 'Hind Madurai', sans-serif; }
+    div.pieContactMain div span a {
+      font-family: 'Hind Madurai', sans-serif; }
+
+/* ------------------------------------------- END CONTACT -------------------------------------- */
+/* --------------------------------------------- ABOUT US --------------------------------------- */
+main div.parrafo {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-direction: column; }
+  main div.parrafo p {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 17px;
+    max-width: 590px; }
+  main div.parrafo a {
+    font-family: 'Hind Madurai', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000; }
+
+/* ------------------------------------------- END ABOUT US ------------------------------------- */
+/* ------------------------------------------- WHERE WE ARE ------------------------------------- */
+main div.mapaBox {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main div.mapaBox div.mapa {
+    padding: 30px;
+    background-color: #f3dabb;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (max-width: 678px) {
+      main div.mapaBox div.mapa {
+        margin-left: 5%;
+        margin-right: 5%; }
+        main div.mapaBox div.mapa iframe {
+          max-width: 100%;
+          height: 300px; } }
+
+main .margin {
+  height: 30px; }
+
+/* ----------------------------------------- END WHERE WE ARE ----------------------------------- */
+/* ------------------------------------------- CHOCOLATES --------------------------------------- */
+div.tabla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  div.tabla table {
+    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+    table-layout: fixed;
+    width: 65%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border: 3px solid #DAB88B; }
+    div.tabla table thead {
+      background: #DAB88B;
+      color: white;
+      text-shadow: 1px 1px 1px black; }
+      div.tabla table thead th {
+        font-size: 25px;
+        border: 3px solid #DAB88B;
+        letter-spacing: 2px; }
+        @media screen and (max-width: 400px) {
+          div.tabla table thead th {
+            font-size: 18px; } }
+      div.tabla table thead th:nth-child(1) {
+        width: 5%; }
+      div.tabla table thead th:nth-child(2) {
+        width: 10%; }
+      div.tabla table thead th:nth-child(3) {
+        width: 30%; }
+        @media screen and (max-width: 600px) {
+          div.tabla table thead th:nth-child(3) {
+            width: 30%;
+            display: none; } }
+      div.tabla table thead th:nth-child(4) {
+        width: 10%; }
+      div.tabla table thead th:nth-child(5) {
+        width: 10%; }
+    div.tabla table tbody td {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 5px;
+      letter-spacing: 1px; }
+      @media screen and (max-width: 400px) {
+        div.tabla table tbody td {
+          font-size: 15px; } }
+    div.tabla table tbody tr:nth-child(odd) {
+      background-color: #FDF6EC; }
+    div.tabla table tbody tr:nth-child(even) {
+      background-color: #fce1ba; }
+    @media screen and (max-width: 600px) {
+      div.tabla table tbody td:nth-child(3) {
+        display: none; } }
+    div.tabla table caption {
+      padding: 20px;
+      color: #fefefe;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 1px;
+      background-color: #DAB88B;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+      font-size: 30px; }
+      @media screen and (max-width: 400px) {
+        div.tabla table caption {
+          font-size: 25px; } }
+    @media screen and (max-width: 768px) {
+      div.tabla table {
+        width: 80%; } }
+  div.tabla .detalle {
+    display: none; }
+    @media screen and (max-width: 600px) {
+      div.tabla .detalle {
+        width: 80%;
+        display: flex; }
+        div.tabla .detalle .detalleBox {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          width: 100%;
+          background-color: #fce1ba;
+          padding-bottom: 10px;
+          border: 3px solid #DAB88B;
+          border-top: 0px; }
+          div.tabla .detalle .detalleBox .detTitulo {
+            padding-top: 5px;
+            color: black; }
+          div.tabla .detalle .detalleBox .detSubtitulo {
+            padding-left: 20px; }
+          div.tabla .detalle .detalleBox p {
+            padding-left: 40px;
+            padding-right: 10px;
+            font-weight: bold;
+            color: #434343; } }
+
+/* ---------------------------------------- END CHOCOLATES -------------------------------------- */
 /*  */
 /* ---------------------------------------------- FOOTER ---------------------------------------- */
 footer {

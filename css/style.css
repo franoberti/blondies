@@ -545,7 +545,7 @@ tbody tr:nth-child(odd) {
     background-color: #FDF6EC;
 }
   
-  tbody tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background-color: #fce1ba;
 }
 
@@ -674,7 +674,7 @@ div.datosBox form {
     box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
     height: auto;
     width: 60%;
-}
+} 
 
 div.datosBox form fieldset #inputNombre{
     grid-area: nombre;

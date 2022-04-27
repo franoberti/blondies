@@ -1,0 +1,149 @@
+/* ------------------------------------------- CHOCOLATES --------------------------------------- */
+
+div.tabla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    table {
+        font-family: 'Hind Madurai', sans-serif;
+        font-family: 'Smooch Sans', sans-serif;
+        table-layout: fixed;
+        width: 65%;
+        border-collapse: collapse;
+        margin-top: 30px;
+        border: 3px solid #DAB88B;
+
+
+        thead {
+            background: #DAB88B;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+
+            th {
+                font-size: 25px;
+                border: 3px solid #DAB88B;
+                letter-spacing: 2px;
+
+                @media screen and (max-width: 400px){
+                    font-size: 18px;
+                }
+            }
+
+            th:nth-child(1) {
+                width: 5%;
+            }
+              
+            th:nth-child(2) {
+                width: 10%;
+            }
+              
+            th:nth-child(3) {
+                width: 30%;
+
+                @media screen and (max-width: 600px){
+                    width: 30%;
+                    display: none;
+                }
+            }
+              
+            th:nth-child(4) {
+                width: 10%;
+            }
+            
+            th:nth-child(5) {
+                width: 10%;
+            }
+        }
+        
+
+        tbody{
+            td {
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 5px;
+                letter-spacing: 1px;
+
+                @media screen and (max-width: 400px){
+                    font-size: 15px;
+                }
+            }
+
+            tr:nth-child(odd) {
+                background-color: #FDF6EC;
+            }
+              
+            tr:nth-child(even) {
+                background-color: #fce1ba;
+            }
+
+            td:nth-child(3) {
+                @media screen and (max-width: 600px){
+                    display: none;
+                }
+            }
+        }
+
+        caption {
+            padding: 20px;
+            color: #fefefe;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+            background-color: #DAB88B;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+            font-size: 30px;
+
+            @media screen and (max-width: 400px){
+                font-size: 25px;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            width: 80%;
+        }
+
+    }
+
+    .detalle{
+        display: none;
+
+        @media screen and (max-width: 600px){
+            width: 80%;
+            display: flex;
+
+            .detalleBox{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                background-color: #fce1ba;
+                padding-bottom: 10px;
+                border: 3px solid #DAB88B;
+                border-top: 0px;
+
+                .detTitulo {
+                    padding-top: 5px;
+                    color: black;
+                }
+
+                .detSubtitulo {
+                    padding-left: 20px;
+                }
+
+                p {
+                    padding-left: 40px;
+                    padding-right: 10px;
+                    font-weight: bold;
+                    color: #434343;
+                    
+                }
+            }
+        
+        }
+    }
+}
+
+/* ---------------------------------------- END CHOCOLATES -------------------------------------- */
