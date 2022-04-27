@@ -815,15 +815,6 @@ footer div.copyright {
     padding-bottom: 5px;
 }
 
-/* footer div.autor {
-    grid-area: autor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding-bottom: 5px;
-} */
-
 footer div.copyright a {
     color: #000000;
     font-weight: 700;

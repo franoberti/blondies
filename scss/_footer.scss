@@ -1,0 +1,211 @@
+
+/*  */
+/* ---------------------------------------------- FOOTER ---------------------------------------- */
+
+footer {
+    background-color: $colorFooter;
+    display: grid;
+    grid-template-rows: 95% 5%;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+        "prefooter prefooter"
+        "copyright copyright"
+    ;
+    height: auto;
+
+    .preFooter {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+            "redes newsletter"
+        ;
+        grid-area: prefooter;
+
+        div.contactBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            padding-left: 40px;
+            grid-area: redes;
+
+            #logoFooter {
+                height: 150px;
+                width: 150px;
+            }
+    
+            div.redes {
+                padding: 0;
+
+                a {
+                    border-radius: 50%;
+                    height: 60px;
+                    width: 60px;
+                    display: inline-block;
+                    color: #fefefe;
+                    line-height: 60px;
+                    text-align: center;
+                    margin-right: 5px;
+
+                    
+                }
+
+                .facebook {
+                    background-color: #3b5998;
+                }
+
+                .gmail {
+                    background-color: #d93025;
+                }
+
+                .instagram {
+                    background-color: #ed4956;
+                }
+            }
+
+            a.linkDondeEstamos {
+                color: #000000;
+                text-decoration: none;
+                font-size: large;
+                font-weight: 600;
+                padding-top: 20px;
+            }
+
+            @media screen and (max-width: 768px){
+                div.contactBox {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        div.newsletterBox {
+            grid-area: newsletter;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            width: auto;
+
+            div.formNews fieldset {
+                border: none;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .input {
+                    color: #000000;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    border: 0;
+                    background-color: #fefefe8f;
+                    padding-left: 7px;
+                    padding-right: 7px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 18px;
+                    margin: 5px;
+                    outline: none;
+                }
+
+                .btn {
+                    color: #fefefe;
+                    border-radius: 5px;
+                    border: 0;
+                    background-color: #1572A1;
+                    padding-left: 7px;
+                    padding-right: 7px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 18px;
+                    margin: 5px;
+
+                    &:hover {
+                        background-color: #1572a1bb;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            .preFooter {
+                grid-template-columns: 100%;
+                grid-template-rows: 50% 50%;
+                grid-template-areas: 
+                    "redes"
+                    "newsletter"
+                ;
+                grid-area: prefooter;
+            }
+        }
+    }
+
+    div.wppFijo {
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+        color: #fefefe;
+        line-height: 60px;
+        text-align: center;
+        margin-right: 5px;
+        background-color: #4FCE5D;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+        .fa-whatsapp:before {
+            content: "\f232";
+            color: white;
+        }
+    }
+
+    div.copyright {
+        grid-area: copyright;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        padding-bottom: 5px;
+
+        a {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+
+    h4 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* .footFooter {
+        position: relative;
+        bottom: 0px;
+
+        span {
+            padding-left: 200px;
+            color: #fefefe;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fefefe;
+            font-weight: bold;
+        }
+    } */
+
+    @media screen and (max-width: 768px){
+        grid-template-rows: 90% 5% 5%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "prefooter"
+            "copyright"
+            "autor"
+        ;
+    }
+
+}
+
+
+/* -------------------------------------------- END FOOTER -------------------------------------- */
+

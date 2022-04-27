@@ -1,0 +1,428 @@
+/* Propiedades Generales */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Smooch Sans', sans-serif; }
+
+/* ---------------------------------------------- HEADER ---------------------------------------- */
+header {
+  background-color: #DAB88B;
+  box-shadow: 0 0 15px #000000;
+  height: 100px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; }
+  header #nav {
+    font-weight: 500;
+    text-decoration: none;
+    width: 100%;
+    display: initial;
+    position: inherit; }
+    header #nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none;
+      flex-grow: 1; }
+      header #nav ul div.itemNav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-grow: 1;
+        height: 100px;
+        padding: 0px; }
+        header #nav ul div.itemNav li {
+          display: flex;
+          flex-grow: 1; }
+          header #nav ul div.itemNav li a {
+            font-size: 30px;
+            background-color: #DAB88B;
+            border-radius: 5px;
+            flex-grow: 1;
+            text-align: center;
+            text-decoration: none;
+            color: #000000; }
+            header #nav ul div.itemNav li a:hover {
+              color: #fefefe;
+              transform: scale(1.2);
+              background-color: #ffffff00;
+              transition: transform, color, 0.25s ease-in-out; }
+            @media screen and (max-width: 768px) {
+              header #nav ul div.itemNav li a {
+                padding-top: 17px; } }
+        @media screen and (max-width: 768px) {
+          header #nav ul div.itemNav {
+            display: block;
+            height: 100%; } }
+      header #nav ul div.logo {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        padding-top: 100px; }
+        header #nav ul div.logo img {
+          background-color: #DAB88B;
+          width: 200px !important;
+          border-radius: 50%; }
+          @media screen and (max-width: 768px) {
+            header #nav ul div.logo img {
+              width: 150px !important; } }
+          @media screen and (max-width: 500px) {
+            header #nav ul div.logo img {
+              width: 120px !important; } }
+        @media screen and (max-width: 768px) {
+          header #nav ul div.logo {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            padding-top: 20px; } }
+        @media screen and (max-width: 500px) {
+          header #nav ul div.logo {
+            height: 120px;
+            width: 120px; } }
+  @media screen and (max-width: 768px) {
+    header {
+      background-color: #DAB88B;
+      box-shadow: 0 0 15px #000000;
+      height: 190px;
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky; } }
+
+/* ------------------------------------------- END HEADER --------------------------------------- */
+main {
+  background: radial-gradient(#eedbc5, #FDF6EC);
+  /* Animacion */ }
+
+@keyframes left-in {
+  0% {
+    left: -100%;
+    opacity: 0; }
+  100% {
+    left: 0;
+    opacity: 1; } }
+  main h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+    position: relative;
+    animation-name: left-in;
+    animation-duration: 1s; }
+    @media screen and (max-width: 768px) {
+      main h1 {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 35px; } }
+  main h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #d3ab78;
+    grid-area: titulo; }
+
+/* ---------------------------------------------- MAIN INDEX ------------------------------------ */
+main div.delivery {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 85%;
+  grid-template-areas: "titulo titulo" "zonaNorte zonaSur";
+  justify-content: center;
+  align-items: center;
+  height: auto; }
+  main div.delivery .zonaDelBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4%;
+    margin-top: 4%; }
+    main div.delivery .zonaDelBox article.ZonaDelivery {
+      background-color: #f3dabb;
+      display: inline-block;
+      height: 250px;
+      width: 260px;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+      top: 70px;
+      border-radius: 10px; }
+
+@keyframes giro {
+  0% {
+    transform: rotate(0deg); }
+  12.5% {
+    transform: rotate(45deg); }
+  25% {
+    transform: rotate(90deg); }
+  37.5% {
+    transform: rotate(135deg); }
+  50% {
+    transform: rotate(180deg); }
+  62.5% {
+    transform: rotate(225deg); }
+  75% {
+    transform: rotate(270deg); }
+  87.5% {
+    transform: rotate(315deg); }
+  100% {
+    transform: rotate(360deg); } }
+      main div.delivery .zonaDelBox article.ZonaDelivery:hover {
+        transform: scale(1.1);
+        transition: transform, color, 0.2s ease-in-out; }
+      main div.delivery .zonaDelBox article.ZonaDelivery:hover > div.circuloZona {
+        animation-name: giro;
+        animation-duration: 0.5s; }
+      main div.delivery .zonaDelBox article.ZonaDelivery div.circuloZona {
+        color: #fefefe;
+        width: 68px;
+        text-transform: uppercase;
+        font-size: 22px;
+        height: 68px;
+        line-height: 68px;
+        background-color: #B7CADB;
+        display: block;
+        text-align: center;
+        border-radius: 50%; }
+      main div.delivery .zonaDelBox article.ZonaDelivery h3.nomZona {
+        padding: 10px;
+        padding-top: 30px;
+        text-align: center;
+        font-size: 30px; }
+      main div.delivery .zonaDelBox article.ZonaDelivery h6.horario {
+        padding: 5px;
+        font-size: 18px; }
+      main div.delivery .zonaDelBox article.ZonaDelivery h4.costo {
+        font-weight: bold;
+        font-size: 20px; }
+    main div.delivery .zonaDelBox #zonaNorte {
+      grid-area: zonaNorte;
+      align-self: center; }
+    main div.delivery .zonaDelBox #zonaSur {
+      grid-area: zonaSur;
+      align-self: center; }
+    @media screen and (max-width: 678px) {
+      main div.delivery .zonaDelBox {
+        padding-top: 0;
+        margin-top: 0; } }
+  @media screen and (max-width: 678px) {
+    main div.delivery #zonaPad {
+      padding-top: 6%;
+      margin-top: 6%; } }
+  @media screen and (max-width: 678px) {
+    main div.delivery {
+      grid-template-columns: 100%;
+      grid-template-rows: 15% 42.5% 42.5%;
+      grid-template-areas: "titulo" "zonaNorte" "zonaSur"; } }
+
+main div.galery {
+  background-color: #FDF6EC;
+  margin: 10% 3% 0px 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 40px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  main div.galery div.galeryFoto {
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    border-radius: 30px; }
+    main div.galery div.galeryFoto .imageGalery {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px; }
+    @media screen and (max-width: 1189px) {
+      main div.galery div.galeryFoto {
+        display: inline-block;
+        height: 300px;
+        width: 300px; } }
+    @media screen and (max-width: 1020px) {
+      main div.galery div.galeryFoto {
+        display: inline-block;
+        height: 280px;
+        width: 280px; } }
+    @media screen and (max-width: 955px) {
+      main div.galery div.galeryFoto {
+        display: inline-block;
+        height: 250px;
+        width: 250px; } }
+    @media screen and (max-width: 850px) {
+      main div.galery div.galeryFoto {
+        display: inline-block;
+        height: 230px;
+        width: 230px; } }
+    @media screen and (max-width: 788px) {
+      main div.galery div.galeryFoto {
+        display: inline-block;
+        height: 210px;
+        width: 210px; } }
+    @media screen and (max-width: 678px) {
+      main div.galery div.galeryFoto {
+        display: inline-block;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        height: 250px;
+        width: 250px;
+        border-radius: 30px; } }
+  @media screen and (max-width: 678px) {
+    main div.galery {
+      margin: 10% 15% 0px 15%;
+      flex-direction: column; } }
+  @media screen and (max-width: 400px) {
+    main div.galery {
+      margin: 10% 8% 0px 8%;
+      flex-direction: column; } }
+
+/* ------------------------------------------- END MAIN INDEX ----------------------------------- */
+/*  */
+/* ---------------------------------------------- FOOTER ---------------------------------------- */
+footer {
+  background-color: #B7CADB;
+  display: grid;
+  grid-template-rows: 95% 5%;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "prefooter prefooter" "copyright copyright";
+  height: auto;
+  /* .footFooter {
+        position: relative;
+        bottom: 0px;
+
+        span {
+            padding-left: 200px;
+            color: #fefefe;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fefefe;
+            font-weight: bold;
+        }
+    } */ }
+  footer .preFooter {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "redes newsletter";
+    grid-area: prefooter; }
+    footer .preFooter div.contactBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding-left: 40px;
+      grid-area: redes; }
+      footer .preFooter div.contactBox #logoFooter {
+        height: 150px;
+        width: 150px; }
+      footer .preFooter div.contactBox div.redes {
+        padding: 0; }
+        footer .preFooter div.contactBox div.redes a {
+          border-radius: 50%;
+          height: 60px;
+          width: 60px;
+          display: inline-block;
+          color: #fefefe;
+          line-height: 60px;
+          text-align: center;
+          margin-right: 5px; }
+        footer .preFooter div.contactBox div.redes .facebook {
+          background-color: #3b5998; }
+        footer .preFooter div.contactBox div.redes .gmail {
+          background-color: #d93025; }
+        footer .preFooter div.contactBox div.redes .instagram {
+          background-color: #ed4956; }
+      footer .preFooter div.contactBox a.linkDondeEstamos {
+        color: #000000;
+        text-decoration: none;
+        font-size: large;
+        font-weight: 600;
+        padding-top: 20px; }
+      @media screen and (max-width: 768px) {
+        footer .preFooter div.contactBox div.contactBox {
+          padding-left: 0; } }
+    footer .preFooter div.newsletterBox {
+      grid-area: newsletter;
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      width: auto; }
+      footer .preFooter div.newsletterBox div.formNews fieldset {
+        border: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        footer .preFooter div.newsletterBox div.formNews fieldset .input {
+          color: #000000;
+          font-weight: bold;
+          border-radius: 5px;
+          border: 0;
+          background-color: #fefefe8f;
+          padding-left: 7px;
+          padding-right: 7px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: 18px;
+          margin: 5px;
+          outline: none; }
+        footer .preFooter div.newsletterBox div.formNews fieldset .btn {
+          color: #fefefe;
+          border-radius: 5px;
+          border: 0;
+          background-color: #1572A1;
+          padding-left: 7px;
+          padding-right: 7px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: 18px;
+          margin: 5px; }
+          footer .preFooter div.newsletterBox div.formNews fieldset .btn:hover {
+            background-color: #1572a1bb; }
+    @media screen and (max-width: 768px) {
+      footer .preFooter .preFooter {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "redes" "newsletter";
+        grid-area: prefooter; } }
+  footer div.wppFijo {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    color: #fefefe;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: #4FCE5D;
+    position: fixed;
+    right: 10px;
+    bottom: 20px; }
+    footer div.wppFijo .fa-whatsapp:before {
+      content: "\f232";
+      color: white; }
+  footer div.copyright {
+    grid-area: copyright;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    padding-bottom: 5px; }
+    footer div.copyright a {
+      color: #000000;
+      font-weight: 700;
+      text-decoration: none; }
+  footer h4 {
+    font-size: 25px;
+    text-align: center; }
+  @media screen and (max-width: 768px) {
+    footer {
+      grid-template-rows: 90% 5% 5%;
+      grid-template-columns: 100%;
+      grid-template-areas: "prefooter" "copyright" "autor"; } }
+
+/* -------------------------------------------- END FOOTER -------------------------------------- */

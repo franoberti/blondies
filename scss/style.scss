@@ -1,0 +1,14 @@
+/* Propiedades Generales */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+@import "variables.scss";
+@import "header.scss";
+@import "main.scss";
+@import "mainIndex.scss";
+
+@import "footer.scss";
