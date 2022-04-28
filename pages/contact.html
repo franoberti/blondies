@@ -57,7 +57,7 @@
         <h2>Para contactarnos:</h2>
         <div class="datosBox">
             <form action="/ruta-destino" method="get" enctype="">
-                <fieldset>
+                <fieldset class="d-flex justify-content-center align-items-center flex-column">
                     <input type="text" name="userName" placeholder="Nombre" id="inputNombre">
                     <input type="number" name="age" placeholder="Ingresa tu edad" id="inputEdad">
                     <input type="tel" name="phone" placeholder="Teléfono" required id="inputTel">
@@ -68,8 +68,8 @@
                         <option value="zs">Zona Sur</option>
                     </select>
                     <textarea name="message" placeholder="Deja tu mensaje" cols="30" rows="10" id="inputMess"></textarea>
-                    <button type="reset" id="inputReset">Limpiar campos</button>
                     <button type="submit" id="inputEnviar">Enviar</button>
+                    <button type="reset" id="inputReset">Limpiar campos</button>
                 </fieldset>
             </form>
         </div>

@@ -424,13 +424,13 @@ div.parrafo {
 }
 
 div.parrafo p {
-    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
     font-size: 17px;
     max-width: 590px;
 }
 
 div.parrafo p a {
-    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
     text-decoration: none;
     font-weight: bold;
     color: #000000;
@@ -486,7 +486,6 @@ div.tabla {
 }
 
 table {
-    font-family: 'Hind Madurai', sans-serif;
     font-family: 'Smooch Sans', sans-serif;
     table-layout: fixed;
     width: 65%;
@@ -645,11 +644,11 @@ div.pieContactMain div {
 }
 
 div.pieContactMain div span {
-    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
 }
 
 div.pieContactMain div a {
-    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
 }
 
 div.datos {
@@ -715,7 +714,7 @@ div.datosBox form fieldset {
 }
 
 div.datosBox form fieldset select, div.datosBox form fieldset select option, div.datosBox form fieldset input, div.datosBox form fieldset textarea {
-    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
     background-color: #fefefe8f;
     margin: 5px;
     padding: 5px;

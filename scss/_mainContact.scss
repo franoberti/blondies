@@ -15,87 +15,68 @@ div.datosBox {
         border-radius: 5px;
         box-shadow: 0 5px 10px rgba(0,0,0,0.05);
         height: auto;
-        width: 60%;
+        width: 40%;
 
         fieldset {
             border: none;
-            display: grid;
-            grid-template-columns: 33% 33% 34%;
-            grid-template-rows: 20% 20% 40% 20%;
-            grid-template-areas: 
-            "nombre nombre edad"
-            "tel email zona"
-            "mess mess mess"
-            "reset enviar enviar"
-            ;
-
-            #inputNombre{
-                grid-area: nombre;
-            }
-            #inputEdad{
-                grid-area: edad;
-            }
-            #inputTel{
-                grid-area: tel;
-            }
-            #inputEmail{
-                grid-area: email;
-            }
-            #inputZona{
-                grid-area: zona;
-            }
-            #inputMess{
-                grid-area: mess;
-            }
-            #inputReset{
-                grid-area: reset;
-            }
-            #inputEnviar{
-                grid-area: enviar;
-            }
+            
 
             select, select option, input, textarea {
-                font-family: 'Hind Madurai', sans-serif;
+                font-family: 'Smooch Sans', sans-serif;
+                
                 background-color: #fefefe8f;
-                margin: 5px;
+                margin: 10px;
                 padding: 5px;
                 color: #000000;
-                font-weight: bold;
+                font-weight: 500;
+                font-size: large;
                 border-radius: 5px;
-                width: 90%;
+                height: 50px;
+                width: 95%;
                 resize: none;
                 outline: none;
                 border: 0;
             }
 
+            textarea {
+                height: 200px;
+            }
+
             button {
-                background-color: #DAB88B;
+                font-family: 'Smooch Sans', sans-serif;
+                font-weight: 500;
+                font-size: large;
+                background-color: #B7CADB;
                 margin: 5px;
                 color: #000000;
                 border-radius: 5px;
                 border: 0;
+                height: 50px;
+                width: 30%;
+                
 
                 &:hover {
                     color: #fefefe;
                 }
             }
 
-            @media screen and (max-width: 678px){
-                border: none;
-                display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows: repeat(5, 10%) 20% repeat(2, 10%); 
-                grid-template-areas: 
-                "nombre"
-                "edad"
-                "tel"
-                "email"
-                "zona"
-                "mess"
-                "reset"
-                "enviar"
-                ;                
+            #inputNombre {
+                margin-top: 20px;
             }
+
+            #inputReset {
+                background-color: #a1a1a1;
+                margin-bottom: 20px;
+                height: 30px;
+            }
+        }
+
+        @media screen and (max-width: 1000px){
+            width: 60%;
+        }
+
+        @media screen and (max-width: 678px){
+            width: 80%;
         }
     }
 }
@@ -106,9 +87,9 @@ div.pieContactMain div {
     padding-top: 20px;
 
     span {
-        font-family: 'Hind Madurai', sans-serif;
+        font-family: 'Smooch Sans', sans-serif;
         a {
-            font-family: 'Hind Madurai', sans-serif;
+            font-family: 'Smooch Sans', sans-serif;
         }
     }
 

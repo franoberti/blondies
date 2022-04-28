@@ -295,65 +295,59 @@ div.datosBox {
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     height: auto;
-    width: 60%; }
+    width: 40%; }
     div.datosBox form fieldset {
-      border: none;
-      display: grid;
-      grid-template-columns: 33% 33% 34%;
-      grid-template-rows: 20% 20% 40% 20%;
-      grid-template-areas: "nombre nombre edad" "tel email zona" "mess mess mess" "reset enviar enviar"; }
-      div.datosBox form fieldset #inputNombre {
-        grid-area: nombre; }
-      div.datosBox form fieldset #inputEdad {
-        grid-area: edad; }
-      div.datosBox form fieldset #inputTel {
-        grid-area: tel; }
-      div.datosBox form fieldset #inputEmail {
-        grid-area: email; }
-      div.datosBox form fieldset #inputZona {
-        grid-area: zona; }
-      div.datosBox form fieldset #inputMess {
-        grid-area: mess; }
-      div.datosBox form fieldset #inputReset {
-        grid-area: reset; }
-      div.datosBox form fieldset #inputEnviar {
-        grid-area: enviar; }
+      border: none; }
       div.datosBox form fieldset select, div.datosBox form fieldset select option, div.datosBox form fieldset input, div.datosBox form fieldset textarea {
-        font-family: 'Hind Madurai', sans-serif;
+        font-family: 'Smooch Sans', sans-serif;
         background-color: #fefefe8f;
-        margin: 5px;
+        margin: 10px;
         padding: 5px;
         color: #000000;
-        font-weight: bold;
+        font-weight: 500;
+        font-size: large;
         border-radius: 5px;
-        width: 90%;
+        height: 50px;
+        width: 95%;
         resize: none;
         outline: none;
         border: 0; }
+      div.datosBox form fieldset textarea {
+        height: 200px; }
       div.datosBox form fieldset button {
-        background-color: #DAB88B;
+        font-family: 'Smooch Sans', sans-serif;
+        font-weight: 500;
+        font-size: large;
+        background-color: #B7CADB;
         margin: 5px;
         color: #000000;
         border-radius: 5px;
-        border: 0; }
+        border: 0;
+        height: 50px;
+        width: 30%; }
         div.datosBox form fieldset button:hover {
           color: #fefefe; }
-      @media screen and (max-width: 678px) {
-        div.datosBox form fieldset {
-          border: none;
-          display: grid;
-          grid-template-columns: 100%;
-          grid-template-rows: repeat(5, 10%) 20% repeat(2, 10%);
-          grid-template-areas: "nombre" "edad" "tel" "email" "zona" "mess" "reset" "enviar"; } }
+      div.datosBox form fieldset #inputNombre {
+        margin-top: 20px; }
+      div.datosBox form fieldset #inputReset {
+        background-color: #a1a1a1;
+        margin-bottom: 20px;
+        height: 30px; }
+    @media screen and (max-width: 1000px) {
+      div.datosBox form {
+        width: 60%; } }
+    @media screen and (max-width: 678px) {
+      div.datosBox form {
+        width: 80%; } }
 
 div.pieContactMain div {
   text-align: center;
   padding: 5px;
   padding-top: 20px; }
   div.pieContactMain div span {
-    font-family: 'Hind Madurai', sans-serif; }
+    font-family: 'Smooch Sans', sans-serif; }
     div.pieContactMain div span a {
-      font-family: 'Hind Madurai', sans-serif; }
+      font-family: 'Smooch Sans', sans-serif; }
 
 /* ------------------------------------------- END CONTACT -------------------------------------- */
 /* --------------------------------------------- ABOUT US --------------------------------------- */
