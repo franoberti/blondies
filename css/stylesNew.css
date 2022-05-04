@@ -26,7 +26,8 @@ header {
       justify-content: center;
       align-items: center;
       list-style: none;
-      flex-grow: 1; }
+      flex-grow: 1;
+      padding-left: 0px; }
       header #nav ul div.itemNav {
         display: flex;
         justify-content: center;
