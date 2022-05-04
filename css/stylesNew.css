@@ -5,6 +5,7 @@
   font-family: 'Smooch Sans', sans-serif; }
 
 /* ---------------------------------------------- HEADER ---------------------------------------- */
+/* Mapa */
 header {
   background-color: #DAB88B;
   box-shadow: 0 0 15px #000000;
@@ -22,13 +23,13 @@ header {
     position: inherit; }
     header #nav ul {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       list-style: none;
       flex-grow: 1; }
       header #nav ul div.itemNav {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         flex-grow: 1;
         height: 100px;
@@ -281,13 +282,14 @@ main div.galery {
 
 /* ------------------------------------------- END MAIN INDEX ----------------------------------- */
 /* --------------------------------------------- CONTACT ---------------------------------------- */
+/* Mixin */
 div.datosBox {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   border: none;
-  justify-content: center;
-  align-items: center;
   margin-top: 5%;
   margin-bottom: 5%; }
   div.datosBox form {
@@ -298,7 +300,7 @@ div.datosBox {
     width: 40%; }
     div.datosBox form fieldset {
       border: none; }
-      div.datosBox form fieldset select, div.datosBox form fieldset select option, div.datosBox form fieldset input, div.datosBox form fieldset textarea {
+      div.datosBox form fieldset select, div.datosBox form fieldset textarea, div.datosBox form fieldset select option, div.datosBox form fieldset textarea option, div.datosBox form fieldset input {
         font-family: 'Smooch Sans', sans-serif;
         background-color: #fefefe8f;
         margin: 10px;
@@ -313,6 +315,7 @@ div.datosBox {
         outline: none;
         border: 0; }
       div.datosBox form fieldset textarea {
+        /* Extend */
         height: 200px; }
       div.datosBox form fieldset button {
         font-family: 'Smooch Sans', sans-serif;
@@ -320,6 +323,7 @@ div.datosBox {
         font-size: large;
         background-color: #B7CADB;
         margin: 5px;
+        padding: 0px;
         color: #000000;
         border-radius: 5px;
         border: 0;

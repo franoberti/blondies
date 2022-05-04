@@ -1,17 +1,27 @@
 /* --------------------------------------------- CONTACT ---------------------------------------- */
 
-div.datosBox {
+/* Mixin */
+@mixin centrarEnCaja() {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin boxMargin($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+div.datosBox {
+    @include centrarEnCaja();
     flex-direction: column;
     width: 100%;
     border: none;
-    justify-content: center;
-    align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
 
     form {
-        background-color: #f3dabb;
+        background-color: $colorSecundario;
         border-radius: 5px;
         box-shadow: 0 5px 10px rgba(0,0,0,0.05);
         height: auto;
@@ -21,12 +31,11 @@ div.datosBox {
             border: none;
             
 
-            select, select option, input, textarea {
+            select, select option, input {
                 font-family: 'Smooch Sans', sans-serif;
                 
                 background-color: #fefefe8f;
-                margin: 10px;
-                padding: 5px;
+                @include boxMargin(10px, 5px);
                 color: #000000;
                 font-weight: 500;
                 font-size: large;
@@ -39,6 +48,8 @@ div.datosBox {
             }
 
             textarea {
+                /* Extend */
+                @extend select;
                 height: 200px;
             }
 
@@ -47,7 +58,7 @@ div.datosBox {
                 font-weight: 500;
                 font-size: large;
                 background-color: #B7CADB;
-                margin: 5px;
+                @include boxMargin(5px, 0px);
                 color: #000000;
                 border-radius: 5px;
                 border: 0;

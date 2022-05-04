@@ -13,17 +13,17 @@ div.tabla {
         width: 65%;
         border-collapse: collapse;
         margin-top: 30px;
-        border: 3px solid #DAB88B;
+        border: 3px solid $colorPrincipal;
 
 
         thead {
-            background: #DAB88B;
+            background: $colorPrincipal;
             color: white;
             text-shadow: 1px 1px 1px black;
 
             th {
                 font-size: 25px;
-                border: 3px solid #DAB88B;
+                border: 3px solid $colorPrincipal;
                 letter-spacing: 2px;
 
                 @media screen and (max-width: 400px){
@@ -92,7 +92,7 @@ div.tabla {
             font-weight: bold;
             text-align: center;
             letter-spacing: 1px;
-            background-color: #DAB88B;
+            background-color: $colorPrincipal;
             background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
             font-size: 30px;
 
@@ -121,7 +121,7 @@ div.tabla {
                 width: 100%;
                 background-color: #fce1ba;
                 padding-bottom: 10px;
-                border: 3px solid #DAB88B;
+                border: 3px solid $colorPrincipal;
                 border-top: 0px;
 
                 .detTitulo {

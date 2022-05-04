@@ -2,10 +2,17 @@
 
 /* ---------------------------------------------- HEADER ---------------------------------------- */
 
+
+/* Mapa */
+$estilos: (
+    color: $colorPrincipal,
+    height: 100px,
+);
+
 header {
-    background-color: $colorPrincipal;
+    background-color: map-get($estilos, color);
     box-shadow: 0 0 15px $black;
-    height: 100px;
+    height: map-get($estilos, height);
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
@@ -21,14 +28,14 @@ header {
 
         ul {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
             list-style: none;
             flex-grow: 1;
 
             div.itemNav {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
                 align-items: center;
                 flex-grow: 1;
                 height: 100px;
@@ -103,7 +110,7 @@ header {
     }
 
     @media screen and (max-width: 768px){
-        background-color: #DAB88B;
+        background-color: $colorPrincipal;
         box-shadow: 0 0 15px #000000;
         height: 190px;
         padding: 0 10px;
