@@ -7,9 +7,21 @@ class Chocolate {
         this.stock = stock
         this.precio = precio
     }
-    
+
     precioCompra(cantidad) {
         return this.precio * cantidad
     }
 
+}
+
+function agregarACarrito(){
+
+    console.table(chocolates)
+    const numChoco = prompt("Ingrese el numero de Chocolate que desea agregar al carrito")
+
+    carrito.push(chocolates[numChoco])
+
+    console.log("Estos son los productos que hay en tu carrito")
+    console.table(carrito)
+    
 }
