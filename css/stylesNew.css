@@ -130,7 +130,8 @@ main div.delivery {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 15% 85%;
-  grid-template-areas: "titulo titulo" "zonaNorte zonaSur";
+  grid-template-areas: "titulo titulo"
+ "zonaNorte zonaSur";
   justify-content: center;
   align-items: center;
   height: auto; }
@@ -215,7 +216,9 @@ main div.delivery {
     main div.delivery {
       grid-template-columns: 100%;
       grid-template-rows: 15% 42.5% 42.5%;
-      grid-template-areas: "titulo" "zonaNorte" "zonaSur"; } }
+      grid-template-areas: "titulo"
+ "zonaNorte"
+ "zonaSur"; } }
 
 main div.galery {
   background-color: #FDF6EC;
@@ -505,7 +508,8 @@ footer {
   display: grid;
   grid-template-rows: 95% 5%;
   grid-template-columns: 30% 70%;
-  grid-template-areas: "prefooter prefooter" "copyright copyright";
+  grid-template-areas: "prefooter prefooter"
+ "copyright copyright";
   height: auto;
   /* .footFooter {
         position: relative;
@@ -605,7 +609,8 @@ footer {
       footer .preFooter {
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
-        grid-template-areas: "redes" "newsletter";
+        grid-template-areas: "redes"
+ "newsletter";
         grid-area: prefooter; } }
   footer div.wppFijo {
     border-radius: 50%;
@@ -641,6 +646,8 @@ footer {
     footer {
       grid-template-rows: 90% 5% 5%;
       grid-template-columns: 100%;
-      grid-template-areas: "prefooter" "copyright" "autor"; } }
+      grid-template-areas: "prefooter"
+ "copyright"
+ "autor"; } }
 
 /* -------------------------------------------- END FOOTER -------------------------------------- */
