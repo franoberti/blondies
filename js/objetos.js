@@ -62,3 +62,27 @@ function calcularPrecioCarrito() {
     console.log("El precio total del carrito es", total)
 
 }
+
+function buscarChocolate() {
+
+    var opc = parseInt(prompt("¿Por que atributo desea buscar/filtrar? (Ingrese 1 o 2) 1-Buscar por Nombre; 2-Filtrar por Precio"))
+    debugger
+    while (opc != 1 & opc != 2) {
+        alert("Debe ingresar el numero 1 o el numero 2 segun la opcion que desee seleccionar")
+        var opc = prompt("¿Por que atributo desea buscar/filtrar? (Ingrese 1 o 2) 1-Buscar por Nombre; 2-Filtrar por Precio")
+    }
+
+    if (opc === 1) {
+        var nom = prompt("Ingrese el nombre por el que desea buscar")
+        const busqueda = chocolates.find((c) => c.nombre === nom)
+        console.table(busqueda)
+    }
+
+    if (opc === 2) {
+        var precioMax = parseInt(prompt("Ingrese el monto maximo que está dispuesto a gastar:"))
+        const busqueda = chocolates.filter((c) => c.precio <= precioMax)
+        console.table(busqueda)
+    }
+
+    
+}
