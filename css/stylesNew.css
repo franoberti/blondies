@@ -22,12 +22,21 @@ header {
     display: initial;
     position: inherit; }
     header #nav ul {
-      display: flex;
+      display: grid;
+      grid-template-columns: 40% 20% 40%;
+      grid-template-rows: 100%;
+      grid-template-areas: "items1 logo items2";
       justify-content: center;
       align-items: center;
       list-style: none;
       flex-grow: 1;
       padding-left: 0px; }
+      header #nav ul #itemsNav1 {
+        grid-area: items1;
+        align-self: center; }
+      header #nav ul #itemsNav2 {
+        grid-area: items2;
+        align-self: center; }
       header #nav ul div.itemNav {
         display: flex;
         justify-content: center;
@@ -59,10 +68,11 @@ header {
             display: block;
             height: 100%; } }
       header #nav ul div.logo {
-        height: 200px;
-        width: 200px;
         border-radius: 50%;
-        padding-top: 100px; }
+        padding-top: 100px;
+        justify-content: center;
+        grid-area: logo;
+        align-self: center; }
         header #nav ul div.logo img {
           background-color: #DAB88B;
           width: 200px !important;
@@ -128,10 +138,9 @@ main {
 main div.delivery {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: 15% 85%;
-  grid-template-areas: "titulo titulo"
- "zonaNorte zonaSur";
+  grid-template-areas: "titulo titulo titulo" "zonaNorte zonaCentro zonaSur";
   justify-content: center;
   align-items: center;
   height: auto; }
@@ -201,6 +210,9 @@ main div.delivery {
     main div.delivery .zonaDelBox #zonaNorte {
       grid-area: zonaNorte;
       align-self: center; }
+    main div.delivery .zonaDelBox #zonaCentro {
+      grid-area: zonaCentro;
+      align-self: center; }
     main div.delivery .zonaDelBox #zonaSur {
       grid-area: zonaSur;
       align-self: center; }
@@ -215,10 +227,8 @@ main div.delivery {
   @media screen and (max-width: 678px) {
     main div.delivery {
       grid-template-columns: 100%;
-      grid-template-rows: 15% 42.5% 42.5%;
-      grid-template-areas: "titulo"
- "zonaNorte"
- "zonaSur"; } }
+      grid-template-rows: 5% 31.66% 31.66% 31.66%;
+      grid-template-areas: "titulo" "zonaNorte" "ZonaCentro" "zonaSur"; } }
 
 main div.galery {
   background-color: #FDF6EC;
@@ -508,8 +518,7 @@ footer {
   display: grid;
   grid-template-rows: 95% 5%;
   grid-template-columns: 30% 70%;
-  grid-template-areas: "prefooter prefooter"
- "copyright copyright";
+  grid-template-areas: "prefooter prefooter" "copyright copyright";
   height: auto;
   /* .footFooter {
         position: relative;
@@ -609,8 +618,7 @@ footer {
       footer .preFooter {
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
-        grid-template-areas: "redes"
- "newsletter";
+        grid-template-areas: "redes" "newsletter";
         grid-area: prefooter; } }
   footer div.wppFijo {
     border-radius: 50%;
@@ -646,8 +654,6 @@ footer {
     footer {
       grid-template-rows: 90% 5% 5%;
       grid-template-columns: 100%;
-      grid-template-areas: "prefooter"
- "copyright"
- "autor"; } }
+      grid-template-areas: "prefooter" "copyright" "autor"; } }
 
 /* -------------------------------------------- END FOOTER -------------------------------------- */

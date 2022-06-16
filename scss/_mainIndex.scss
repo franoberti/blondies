@@ -7,11 +7,11 @@ main {
     div.delivery {
         margin-top: 30px;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 33% 33% 33%;
         grid-template-rows: 15% 85%;
         grid-template-areas: 
-            "titulo titulo"
-            "zonaNorte zonaSur"
+            "titulo titulo titulo"
+            "zonaNorte zonaCentro zonaSur"
         ;
         justify-content: center;
         align-items: center;
@@ -110,6 +110,11 @@ main {
                 grid-area: zonaNorte;
                 align-self: center;
             }
+
+            #zonaCentro {
+                grid-area: zonaCentro;
+                align-self: center;
+            }
     
             #zonaSur {
                 grid-area: zonaSur;
@@ -131,10 +136,11 @@ main {
 
         @media screen and (max-width: 678px){
             grid-template-columns: 100%;
-            grid-template-rows: 15% 42.5% 42.5%;
+            grid-template-rows: 5% 31.66% 31.66% 31.66%;
             grid-template-areas: 
                 "titulo"
                 "zonaNorte"
+                "ZonaCentro"
                 "zonaSur"
             ;
         }
