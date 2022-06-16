@@ -23,7 +23,7 @@ header {
     position: inherit; }
     header #nav ul {
       display: grid;
-      grid-template-columns: 40% 20% 40%;
+      grid-template-columns: 35% 30% 35%;
       grid-template-rows: 100%;
       grid-template-areas: "items1 logo items2";
       justify-content: center;
@@ -49,7 +49,7 @@ header {
           flex-grow: 1; }
           header #nav ul div.itemNav li a {
             font-size: 30px;
-            background-color: #DAB88B;
+            background-color: #fefefe00;
             border-radius: 5px;
             flex-grow: 1;
             text-align: center;
