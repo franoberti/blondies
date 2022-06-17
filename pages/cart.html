@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blondie's - Chocolates</title>
+    <title>Blondie's - Cart</title>
     <!-- Link para el uso de iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 
@@ -16,8 +15,8 @@
     <link rel="stylesheet" href="../css/stylesNew.css">
 
     <!-- Javascript -->
-    <script defer src="../js/objetos.js"></script>
-    <script defer src="../js/variables.js"></script>
+    <script defer src="js/objetos.js"></script>
+    <script defer src="js/variables.js"></script>
 
     <!-- Tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +34,6 @@
 
 
 </head>
-
 <body>
     <!-- HEADER -->
     <header>
@@ -45,6 +43,7 @@
                 <div class="itemNav" id="itemsNav1">
                     <li class="item" id="item1"><a href="../index.html">Inicio</a></li>
                     <li class="item" id="item2"><a href="../pages/aboutUs.html">Conocenos</a></li>
+                    <li class="item" id="item3"><a href="../pages/chocolates.html">Chocolates</a></li>
                 </div>
 
                 <!-- Logo -->
@@ -55,8 +54,7 @@
                 <div class="itemNav" id="itemsNav2">
                     <li class="item" id="item4"><a href="../pages/location.html">Ubicación</a></li>
                     <li class="item" id="item5"><a href="../pages/contact.html">Contacto</a></li>
-                    <li class="item" id="item5"><a href="../pages/cart.html"><i
-                                class="fa-solid fa-cart-shopping"></i></a></li>
+
                 </div>
             </ul>
         </nav>
@@ -67,7 +65,6 @@
     <main>
         <!-- Slogan -->
         <h1 class="slogan">"Los mejores chocolates caseros"</h1>
-
         <h2>Tu Carrito</h2>
 
         <div class="container">
@@ -87,105 +84,6 @@
 
         </div>
 
-        <h2>Conocé nuestros mejores chocolates</h2>
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../assets/Choco1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Chocolate con Almendras</h5>
-                            <p class="card-text first-text">Grande: $ 600.00</p>
-                            <p class="card-text">Mediano: $ 450.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                </div>
-                                <span class="btn btn-success" id="btnChoco1">Agregar</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../assets/Choco2.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Chocolate con Oreos relleno con Dulce de Leche</h5>
-                            <p class="card-text first-text">Grande: $ 600.00</p>
-                            <p class="card-text">Mediano: $ 450.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                </div>
-                                <span class="btn btn-success" id="btnChoco2">Agregar</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../assets/Choco3.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Chocolate con Rocklets relleno con Dulce del Leche</h5>
-                            <p class="card-text first-text">Grande: $ 600.00</p>
-                            <p class="card-text">Mediano: $ 450.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                </div>
-                                <span class="btn btn-success" id="btnChoco3">Agregar</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../assets/Choco4.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Chocolate Negro relleno con Chocolate Blanco y Oreos</h5>
-                            <p class="card-text first-text">Grande: $ 600.00</p>
-                            <p class="card-text">Mediano: $ 450.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                </div>
-                                <span class="btn btn-success" id="btnChoco4">Agregar</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../assets/Choco5.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Chocolate con Oreos y Rocklets</h5>
-                            <p class="card-text first-text">Grande: $ 600.00</p>
-                            <p class="card-text">Mediano: $ 450.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                </div>
-                                <span class="btn btn-success" id="btnChoco5">Agregar</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../assets/Choco6.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Bombones de Oreo y Dulce de Leche</h5>
-                            <p class="card-text first-text">Docena: $ 700.00</p>
-                            <p class="card-text">Media Docena: $ 400.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                </div>
-                                <span class="btn btn-success" id="btnChoco6">Agregar</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </main>
 
     <!-- FOOTER -->
@@ -257,7 +155,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
+    
 </body>
-
 </html>

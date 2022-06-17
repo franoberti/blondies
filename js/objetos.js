@@ -14,17 +14,42 @@ class Chocolate {
 
 }
 
-function agregarACarrito(){
+btnChoco1.addEventListener("click", ()=> {
+    agregarACarrito(chocolate1)
+})
 
-    console.table(chocolates)
-    const numChoco = prompt("Ingrese el numero de Chocolate que desea agregar al carrito")
+btnChoco2.addEventListener("click", ()=> {
+    agregarACarrito(chocolate2)
+})
 
-    carrito.push(chocolates[numChoco])
+btnChoco3.addEventListener("click", ()=> {
+    agregarACarrito(chocolate3)
+})
 
-    console.log("Estos son los productos que hay en tu carrito")
-    console.table(carrito)
+btnChoco4.addEventListener("click", ()=> {
+    agregarACarrito(chocolate4)
+})
+
+btnChoco5.addEventListener("click", ()=> {
+    agregarACarrito(chocolate5)
+})
+
+btnChoco6.addEventListener("click", ()=> {
+    agregarACarrito(chocolate6)
+})
+
+const agregarACarrito = (choco) => {
+
+    const idTr = choco + "enCarrito"
+    const trCarrito = document.createElement("tr")
+    trCarrito.id = idTr
+    trCarrito.innerHTML = `<td> ${choco.nombre} </td>
+                           <td> ${choco.precio} </td>`
+    listadoCarrito.append(trCarrito)
 
 }
+
+
 
 function registrarChocolate() {
 
