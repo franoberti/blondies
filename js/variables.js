@@ -7,6 +7,7 @@ const chocolate5 = new Chocolate ("Chocolate con Oreos y Rocklets", "Chocolate n
 const chocolate6 = new Chocolate ("Bombones de Oreo y Dulce de Leche", "Conitos de dulce de leche con galleta oreo de base bañado en chocolate", "Grande", 22, "$ 700.00")
 
 const chocolates = []
+const carrito = []
 
 const btnChoco1 = document.getElementById("btnChoco1")
 const btnChoco2 = document.getElementById("btnChoco2")

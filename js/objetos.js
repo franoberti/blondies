@@ -1,18 +1,4 @@
-class Chocolate {
 
-    constructor(nombre, descripcion, tamano, stock, precio) {
-        this.nombre = nombre
-        this.descripcion = descripcion
-        this.tamano = tamano
-        this.stock = stock
-        this.precio = precio
-    }
-
-    precioCompra(cantidad) {
-        return this.precio * cantidad
-    }
-
-}
 
 btnChoco1.addEventListener("click", ()=> {
     agregarACarrito(chocolate1)
@@ -38,7 +24,7 @@ btnChoco6.addEventListener("click", ()=> {
     agregarACarrito(chocolate6)
 })
 
-const agregarACarrito = (choco) => {
+/* const agregarACarrito = (choco) => {
 
     const idTr = choco + "enCarrito"
     const trCarrito = document.createElement("tr")
@@ -47,9 +33,27 @@ const agregarACarrito = (choco) => {
                            <td> ${choco.precio} </td>`
     listadoCarrito.append(trCarrito)
 
+} */
+
+const agregarACarrito = (choco) => {
+
+    if(localStorage.getItem("carrito")){
+        const datosCarrito = JSON.parse(localStorage.getItem("carrito"))
+        datosCarrito.push(choco)
+        let carritoA = JSON.stringify(datosCarrito)
+
+        localStorage.setItem("carrito", carritoA)
+    }
+    else {
+        const datoCarrito = []
+        datoCarrito.push(choco)
+        
+        let carritoA = JSON.stringify(datoCarrito)
+
+        localStorage.setItem("carrito", carritoA)
+    }
+
 }
-
-
 
 function registrarChocolate() {
 
