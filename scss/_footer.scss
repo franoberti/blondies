@@ -139,10 +139,10 @@ footer {
         border-radius: 50%;
         height: 60px;
         width: 60px;
-        display: inline-block;
+        display: flex;
         color: #fefefe;
-        line-height: 60px;
-        text-align: center;
+        align-items: center;
+        justify-content: center;
         margin-right: 5px;
         background-color: #4FCE5D;
         position: fixed;

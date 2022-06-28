@@ -39,7 +39,18 @@ const agregarACarrito = (choco) => {
 
     if(localStorage.getItem("carrito")){
         const datosCarrito = JSON.parse(localStorage.getItem("carrito"))
-        datosCarrito.push(choco)
+
+        let existe = false
+        datosCarrito.forEach(chocolate => {
+            if(chocolate.nombre === choco.nombre){
+                chocolate.cantidadEnCarrito = parseInt(chocolate.cantidadEnCarrito) + 1
+                existe = true
+            }
+        })
+        if(existe == false){
+            datosCarrito.push(choco)
+        }
+
         let carritoA = JSON.stringify(datosCarrito)
 
         localStorage.setItem("carrito", carritoA)

@@ -1,0 +1,21 @@
+.fa.fa-trash-can{
+    color: rgb(253, 90, 90);
+
+    &:hover{
+        color: rgb(158, 66, 66);
+        cursor: pointer;
+    }
+
+    &:target {
+        color: rgb(170, 147, 147);
+        cursor: pointer;
+    }
+}
+
+thead {
+    font-size: 35px;
+}
+
+tbody {
+    font-size: 25px;
+}

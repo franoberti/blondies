@@ -422,6 +422,21 @@ main .margin {
   margin-bottom: 0 !important; }
 
 /* ---------------------------------------- END CHOCOLATES -------------------------------------- */
+.fa.fa-trash-can {
+  color: #fd5a5a; }
+  .fa.fa-trash-can:hover {
+    color: #9e4242;
+    cursor: pointer; }
+  .fa.fa-trash-can:target {
+    color: #aa9393;
+    cursor: pointer; }
+
+thead {
+  font-size: 35px; }
+
+tbody {
+  font-size: 25px; }
+
 /*  */
 /* ---------------------------------------------- FOOTER ---------------------------------------- */
 footer {
@@ -535,10 +550,10 @@ footer {
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    display: inline-block;
+    display: flex;
     color: #fefefe;
-    line-height: 60px;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     margin-right: 5px;
     background-color: #4FCE5D;
     position: fixed;
