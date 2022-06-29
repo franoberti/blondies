@@ -1,6 +1,7 @@
 class Chocolate {
 
-    constructor(nombre, descripcion, tamano, stock, precio, cantEnCart) {
+    constructor(id, nombre, descripcion, tamano, stock, precio, cantEnCart) {
+        this.id = id
         this.nombre = nombre
         this.descripcion = descripcion
         this.tamano = tamano

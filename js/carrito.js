@@ -28,12 +28,34 @@ const getCarrito = (carrito) => {
                                <td> $ ${choco.precio}.00 </td>
                                <td> ${choco.cantidadEnCarrito} </td>
                                <td> $ ${choco.precio*choco.cantidadEnCarrito}.00 </td>
-                               <td> <i class="fa fa-trash-can"></i> </td>`
+                               <td> <i class="fa fa-trash-can" onclick=onclickTrash(${choco.id})></i> </td>`
         listadoCarrito.append(trCarrito)
     });
 }
 
 
+function onclickTrash(id){
+    borrarDeCarrito(id)
+}
 
+function borrarDeCarrito(id){
+
+    const datosCarrito = JSON.parse(localStorage.getItem("carrito"))
+
+    let idAEliminar
+    let i = 0
+    datosCarrito.forEach(chocolate => {
+        chocolate.id === id && (idAEliminar = i)
+        i++
+    })
+
+    datosCarrito.splice(idAEliminar, 1)
+
+    let carritoA = JSON.stringify(datosCarrito)
+
+    localStorage.setItem("carrito", carritoA)
+    location.reload()
+
+}
 
 mostrarCarrito()

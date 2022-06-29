@@ -1,5 +1,3 @@
-
-
 btnChoco1.addEventListener("click", ()=> {
     agregarACarrito(chocolate1)
 })
