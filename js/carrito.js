@@ -25,17 +25,32 @@ const getCarrito = (carrito) => {
         const trCarrito = document.createElement("tr")
         trCarrito.id = idTr
         trCarrito.innerHTML = `<td> ${choco.nombre} </td>
-                               <td> $ ${choco.precio}.00 </td>
-                               <td> ${choco.cantidadEnCarrito} </td>
-                               <td> $ ${choco.precio*choco.cantidadEnCarrito}.00 </td>
-                               <td> <i class="fa fa-trash-can" onclick=onclickTrash(${choco.id})></i> </td>`
+                               <td class="text-center"> $ ${choco.precio}.00 </td>
+                               <td class="text-center"> ${choco.cantidadEnCarrito} </td>
+                               <td class="text-center"> $ ${choco.precio*choco.cantidadEnCarrito}.00 </td>
+                               <td class="text-center"> <i class="fa fa-trash-can" onclick=onclickTrash(${choco.id})></i> </td>`
         listadoCarrito.append(trCarrito)
     });
-}
+} 
 
 
 function onclickTrash(id){
-    borrarDeCarrito(id)
+    
+    Swal.fire({
+        title: 'Atención',
+        text: "¿Estás seguro que quieres eliminar este chocolate del carrito?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        cancelButtonText: 'Cancelar',
+        confirmButtonText: 'Eliminar'
+      }).then((result) => {
+        if (result.value) {
+            borrarDeCarrito(id)
+        }
+      })
+    
 }
 
 function borrarDeCarrito(id){

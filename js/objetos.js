@@ -62,6 +62,11 @@ const agregarACarrito = (choco) => {
         localStorage.setItem("carrito", carritoA)
     }
 
+    Swal.fire({
+        title: "¡Agregado al carrito!",
+        timer: 1000
+    })
+
 }
 
 function registrarChocolate() {
