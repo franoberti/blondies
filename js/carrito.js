@@ -1,38 +1,43 @@
-
 function mostrarCarrito() {
 
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || "carritoVacio"
 
-    const carrito = JSON.parse(localStorage.getItem("carrito")) || "carritoVacio"
+    if(localStorage.getItem("carrito").length == 2){
+        carrito = "carritoVacio"
+    }
     
-    carrito === "carritoVacio" ? carritoVacio() : getCarrito(carrito)
+    if(carrito == "carritoVacio"){
+        carritoVacio()
+    }
+    else{
+        getCarrito(carrito)
+    }
 
 }
 
 const carritoVacio = () => {
     const trCarrito = document.createElement("tr")
     trCarrito.id = "CarritoVacio"
-    trCarrito.innerHTML = `<td> Tu carrito esta vacio </td>
+    trCarrito.innerHTML = `<td></td>
                            <td></td>
-                           <td></td>
+                           <td>Tu carrito esta vacio</td>
                            <td></td>
                            <td></td>`
     listadoCarrito.append(trCarrito)
 }
 
 const getCarrito = (carrito) => {
+
     carrito.forEach(choco => {
-        const idTr = choco + "enCarrito"
         const trCarrito = document.createElement("tr")
-        trCarrito.id = idTr
         trCarrito.innerHTML = `<td> ${choco.nombre} </td>
                                <td class="text-center"> $ ${choco.precio}.00 </td>
-                               <td class="text-center"> ${choco.cantidadEnCarrito} </td>
-                               <td class="text-center"> $ ${choco.precio*choco.cantidadEnCarrito}.00 </td>
+                               <td class="text-center"> ${choco.cantCarrito} </td>
+                               <td class="text-center"> $ ${choco.precio*choco.cantCarrito}.00 </td>
                                <td class="text-center"> <i class="fa fa-trash-can" onclick=onclickTrash(${choco.id})></i> </td>`
         listadoCarrito.append(trCarrito)
     });
 } 
-
 
 function onclickTrash(id){
     

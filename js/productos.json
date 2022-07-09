@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre": "Chocolate con Almendras",
+        "descripcion": "Chocolate blanco o negro relleno de almendras",
+        "img": "../assets/Choco1.jpg",
+        "precio":  650,
+        "cantidadEnCart": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Chocolate con Oreos relleno con Dulce de Leche",
+        "descripcion": "Chocolate blanco o negro relleno de oreos y dulce de leche",
+        "img": "../assets/Choco2.jpg",
+        "precio":  650,
+        "cantidadEnCart": 1
+    },
+    {
+        "id": 3,
+        "nombre": "Chocolate con Rocklets relleno con Dulce del Leche",
+        "descripcion": "Chocolate blanco o negro relleno de rocklets y dulce de leche",
+        "img": "../assets/Choco3.jpg",
+        "precio":  650,
+        "cantidadEnCart": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Chocolate Negro relleno con Chocolate Blanco y Oreos",
+        "descripcion": "Chocolate negro y chocolate blanco relleno con oreos o chocolinas",
+        "img": "../assets/Choco4.jpg",
+        "precio":  650,
+        "cantidadEnCart": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Chocolate con Oreos y Rocklets",
+        "descripcion": "Chocolate negro o blanco relleno con oreos y rocklets",
+        "img": "../assets/Choco5.jpg",
+        "precio": 650,
+        "cantidadEnCart": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Bombones de Oreo y Dulce de Leche",
+        "descripcion": "Conitos de dulce de leche con galleta oreo de base bañado en chocolate",
+        "img": "../assets/Choco6.jpg",
+        "precio": 950,
+        "cantidadEnCart": 1
+    }
+]

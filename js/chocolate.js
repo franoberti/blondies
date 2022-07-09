@@ -1,17 +1,11 @@
 class Chocolate {
 
-    constructor(id, nombre, descripcion, tamano, stock, precio, cantEnCart) {
+    constructor(id, nombre, descripcion, cantCarrito, precio) {
         this.id = id
         this.nombre = nombre
         this.descripcion = descripcion
-        this.tamano = tamano
-        this.stock = stock
+        this.cantCarrito = cantCarrito
         this.precio = precio
-        this.cantidadEnCarrito = cantEnCart
-    }
-
-    precioCompra(cantidad) {
-        return this.precio * cantidad
     }
 
 }  
