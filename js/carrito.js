@@ -11,6 +11,7 @@ function mostrarCarrito() {
     }
     else{
         getCarrito(carrito)
+
     }
 
 }
@@ -37,6 +38,13 @@ const getCarrito = (carrito) => {
                                <td class="text-center"> <i class="fa fa-trash-can" onclick=onclickTrash(${choco.id})></i> </td>`
         listadoCarrito.append(trCarrito)
     });
+
+
+    const divBtnFinCompra = document.createElement("div")
+    divBtnFinCompra.innerHTML = `<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Finalizar Compra</a>`
+    divBtnFinCompra.className = "text-center mb-4"
+    btnFinalizarCompra.append(divBtnFinCompra)
+
 } 
 
 function onclickTrash(id){
