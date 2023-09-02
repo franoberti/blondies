@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
 const agregarACarrito = (idChoco) => {
 
-    debugger
     if(localStorage.getItem("carrito")){
 
         const datosCarrito = JSON.parse(localStorage.getItem("carrito"))
